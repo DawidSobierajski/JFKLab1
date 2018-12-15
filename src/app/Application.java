@@ -29,8 +29,8 @@ public class Application {
                 try
                 {
                     System.out.println("Wybrałeś plik.");
-   
-                 ArrayList<String> instructionLines = new ArrayList<>(Files.readAllLines(new File(args[0]).toPath(), Charset.forName("UTF-8")));
+
+                    ArrayList<String> instructionLines = new ArrayList<>(Files.readAllLines(new File(args[0]).toPath(), Charset.forName("UTF-8")));
                     instructionLines.set(0, instructionLines.get(0).substring(1));
 
                     for (String instructionLine : instructionLines)
